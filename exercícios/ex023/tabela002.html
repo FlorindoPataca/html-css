@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;/*auxiliar a fixar o cabeçalho da tabela no topo*/
+        }
+        thead {
+            background-color: rgb(56, 55, 55);
+            text-align: left;
+            color: white;
+        }
+
+        thead > tr > th { /* fixar o cabeçalho da tabela no topo*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(56, 55, 55);
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd) { /*Efeito zebrado*/
+            background-color: lightgray;
+        }
+
+        .numero {
+            text-align: right;
+        }
+        th#populacao {
+            text-align: right;
+            width: 50px;
+        }
+
+        .posicao {
+            width: 30px;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        table
+            caption
+            head
+                tr, td, th
+            body
+                tr, td, th
+            foot
+                tr, td, th
+    -->
+                <table>
+                    <caption>População das unidades federativas</caption>
+                    <thead>
+                        <tr>
+                            <th class="posicao" scope="col">Posição</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col" id="populacao">População</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="posicao">1</td>
+                            <td>Luanda</td>
+                            <td class="numero">45.919.04</td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">2</td>
+                            <td>
+                                Lubango
+                            </td>
+                            <td class="numero">
+                                21.168.761
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">3</td>
+                            <td>Benguela</td>
+                            <td class="numero">
+                                17.264.943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">4</td>
+                            <td>Huambo</td>
+                            <td class="numero">
+                                17.264.943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">5</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                            <tr>
+                            <td class="posicao">6</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">7</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                            <tr>
+                            <td class="posicao">8</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">9</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">10</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">11</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">12</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">13</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">14</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">15</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">16</td>
+                            <td>São Paulo</td>
+                            <td class="numero">45 919 04</td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">17</td>
+                            <td>
+                                Minas Gerais
+                            </td>
+                            <td class="numero">
+                                21 168 761
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">18</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">19</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">20</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                            <tr>
+                            <td class="posicao">21</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">22</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                            <tr>
+                            <td class="posicao">23</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">24</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">25</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">26</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="posicao">27</td>
+                            <td>Rio de Janeiro</td>
+                            <td class="numero">
+                                17 264 943
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2"  scope="row"><strong>Total</strong></td>
+                            <td class="numero"><strong>645.857.970</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse, explicabo maxime dolor error facilis quam sed repellendus voluptates maiores deleniti placeat optio! Sequi ea facere, temporibus amet exercitationem et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae maxime, et deleniti sint voluptate, libero accusantium odio iure nemo, maiores nihil! Quibusdam dignissimos repudiandae temporibus facilis animi impedit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae ipsum quibusdam libero eaque labore officia voluptate similique! Reiciendis nobis modi sunt quibusdam officiis cupiditate quis explicabo odit vel magni.</p>
+</body>
+</html>
