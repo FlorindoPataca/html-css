@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="25">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone" pattern="^\d{9}$" placeholder="9xx xxx xxx" required>
+            </p>
+            <p>
+                <label for="ibi">Nº BI</label>
+                <input type="text" name="bi" id="ibi" pattern="^\d{9}[A-Za-z]{2}\d{3}$" placeholder="ex: 123456789BE012" required maxlength="14">
+            </p>
+        </fieldset>
+        <!--Estudar mais RegEx-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
